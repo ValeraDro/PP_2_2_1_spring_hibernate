@@ -54,9 +54,8 @@ public class Car implements Serializable {
 
     @Override
     public String toString() {
-        return "{" +
-                "model='" + model + '\'' +
-                ", series=" + series +
-                '}';
+        return model +
+                ", series(" + series +
+                ')';
     }
 }
