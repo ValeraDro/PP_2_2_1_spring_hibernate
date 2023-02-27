@@ -20,7 +20,9 @@ public class Car implements Serializable {
     @Column(name = "series")
     private int series;
 
-    public Car() {}
+    public Car() {
+    }
+
     public Car(String model, int series) {
         this.model = model;
         this.series = series;
@@ -52,7 +54,7 @@ public class Car implements Serializable {
 
     @Override
     public String toString() {
-        return "Car{" +
+        return "{" +
                 "model='" + model + '\'' +
                 ", series=" + series +
                 '}';
